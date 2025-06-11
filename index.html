@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Pages</title>
     <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <script>
-  function goToThankYouPage() {
-    setTimeout(function () {
-      window.location.href = "thankyou.html";
-    }, 100); // redirect after 100ms
-    return true;
-  }
-</script>
-
-
     <!-- Header -->
     <header>
         <div class="logo">JEKSMITH</div>
@@ -105,8 +95,6 @@
   <button type="submit">Send Message</button>
 </form>
 
-
-
       <div class="contact-details">
         <div class="info-box">
           <i class="fas fa-envelope"></i>
@@ -124,6 +112,23 @@
     </div>
   </div>
 </section>
+
+    <!-- Script for Google Sheets Form Submission -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4vp9z_AJOtja6LwyFaB6wMgAASNppOUAhJmXB_fioRm5I0IVcNxXg-UQw4YzOlP-v3Q/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          console.log('Success!', response);
+          window.location.href = "thankyou.html";
+        })
+        .catch(error => console.error('Error!', error.message));
+      return false;
+    }
+  </script>
 
 </body>
 </html>
