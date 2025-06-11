@@ -1,100 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Pages</title>
-    <link rel="stylesheet" href="landing.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">JEKSMITH</div>
-        <nav>
-  <a href="index.html"><i class="fas fa-home"></i> Home</a>
-  <a href="#"><i class="fas fa-blog"></i> Blog</a>
-  <a href="#"><i class="fas fa-file-alt"></i> Pages</a>
-  <a href="#"><i class="fas fa-cogs"></i> Services</a>
-  <a href="#"><i class="fas fa-envelope"></i> Contact</a>
-</nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">JEKSMITH</div>
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-blog"></i> Blog</a>
+      <a href="#"><i class="fas fa-file-alt"></i> Pages</a>
+      <a href="#"><i class="fas fa-cogs"></i> Services</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
 
-   <!-- Hero Section -->
-<section class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-bg">
-        <img src="Image/Black.jpg" alt="Background Image">
+      <img src="Image/Black.jpg" alt="Background Image">
     </div>
-
     <div class="hero-text">
-        <h3>A WEB DEVLOPER</h3>
-        <h1>I Build Responsive & Interactive Websites</h1>
-        <p>"This is a sample project created to practice HTML and CSS skills. It demonstrates layout, design, and responsiveness."</p>
-        <div class="hero-buttons">
-            <a href="#" class="btn">Read More</a>
-            <a href="#" class="btn-outline">Request a Consult</a>
-        </div>
+      <h3>A WEB DEVELOPER</h3>
+      <h1>I Build Responsive & Interactive Websites</h1>
+      <p>This is a sample project created to practice HTML and CSS skills. It demonstrates layout, design, and responsiveness.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Read More</a>
+        <a href="#" class="btn-outline">Request a Consult</a>
+      </div>
     </div>
-</section>
+  </section>
 
-
-    <!-- Features -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<section class="features">
-  <div class="container">
-    <div class="feature-box">
-      <i class="fas fa-code"></i>
-      <h4>Custom Website Development</h4>
-      <p>I build tailored websites that match client needs, using clean HTML, CSS, and JavaScript.</p>
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-box">
+        <i class="fas fa-code"></i>
+        <h4>Custom Website Development</h4>
+        <p>I build tailored websites that match client needs, using clean HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-check-circle"></i>
+        <h4>Clean & Optimized Code</h4>
+        <p>My code is readable, responsive, and follows best practices for speed and performance.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-clock"></i>
+        <h4>On-Time Delivery</h4>
+        <p>I manage my time efficiently to ensure every project is delivered before the deadline.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="feature-box">
-      <i class="fas fa-check-circle"></i>
-      <h4>Clean & Optimized Code</h4>
-      <p>My code is readable, responsive, and follows best practices for speed and performance.</p>
+  <!-- About Us -->
+  <section class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <h3>We are passionate about achieving better results for our clients</h3>
+      <p>Hi, I'm Jigar Panchal, a dedicated Web Developer with a strong grip on HTML, CSS. I love turning ideas into beautifully designed, functional websites.</p>
+      <a href="#" class="btn">Read More</a>
     </div>
-
-    <div class="feature-box">
-      <i class="fas fa-clock"></i>
-      <h4>On-Time Delivery</h4>
-      <p>I manage my time efficiently to ensure every project is delivered before the deadline.</p>
+    <div class="about-img">
+      <img src="Image/One.jpeg" alt="About Image">
     </div>
-  </div>
-</section>
+  </section>
 
-    <!-- About Us -->
-    <section class="about">
-        <div class="about-text">
-            <h2>About Us</h2>
-            <h3> we passionate about achieving better results for our clients</h3>
-            <p> Hi, I'm Jigar Panchal, a dedicated Web Developer with a strong grip on HTML, CSS. 
-      I love turning ideas into beautifully designed, functional websites. 
-      From responsive layouts to interactive features, I focus on clean code and best practices to deliver quality work on time.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="about-img">
-            <img src="Image/One.jpeg" alt="About Image">
-        </div>
-    </section>
+  <div style="height: 10px; background-color: black;"></div>
 
-     <!-- Divider -->
-    <div style="height: 10px; background-color: black;"></div>
-
-<!---Contact-->
+  <!-- Contact Section -->
 <section class="contact-section" id="contact">
   <div class="contact-container">
     <h2>Let's Connect</h2>
     <p>If you'd like to work together or just want to say hello, feel free to reach out!</p>
 
     <div class="contact-content">
+      
+      <!-- Contact Form -->
       <form class="contact-form" action="https://formspree.io/f/mpwrpbpp" method="POST" onsubmit="return goToThankYouPage();">
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
+      <!-- Contact Details -->
       <div class="contact-details">
         <div class="info-box">
           <i class="fas fa-envelope"></i>
@@ -113,7 +108,8 @@
   </div>
 </section>
 
-    <!-- Script for Google Sheets Form Submission -->
+
+  <!-- Script for Google Sheets Form Submission -->
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw4vp9z_AJOtja6LwyFaB6wMgAASNppOUAhJmXB_fioRm5I0IVcNxXg-UQw4YzOlP-v3Q/exec';
     const form = document.forms['submit-to-google-sheet'];
@@ -129,6 +125,5 @@
       return false;
     }
   </script>
-
 </body>
 </html>
